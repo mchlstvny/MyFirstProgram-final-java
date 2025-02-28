@@ -1,4 +1,4 @@
-public class ANSIColors {
+public class ANSIColors {    // ANSI Colors Java Documentation from https://www.w3schools.blog/ansi-colors-java
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
     // Regular Colors
