@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MyFirstProgram {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // Hello World
         System.out.println(ANSIColors.RED_BOLD + "Hello World!" + ANSIColors.RESET);
         Utils.sleep(2000);
@@ -62,8 +62,8 @@ public class MyFirstProgram {
             // Ask user if they want to meet another furry friend
             while (true) {
                 System.out.print(ANSIColors.GREEN_BOLD + "\nWould you like to meet another furry friend? (Y/N): " + ANSIColors.RESET);
-                String response = scanner.nextLine().trim().toUpperCase(); // Convert input to uppercase
-
+                String response = scanner.nextLine().trim().toUpperCase(); // Convert input to uppercase 
+                                                                           // trim() = split() - toUppercase() = .uppercase()
                 if (response.equals("Y")) {
                     break; // Loop continues for another choice
                 } else if (response.equals("N")) {
